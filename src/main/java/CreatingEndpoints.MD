@@ -76,7 +76,7 @@ public static void main(String[] args){
     Javalin app = Javalin.create().start(9000);
 
     // HTTP GET REQUEST to http://localhost:9000/get-request
-    app.get("/get-request", ctx -> {
+    app.get("/get-request", ctx -> {()
         //logic to be executed when this endpoint is hit
         ctx.result("get request endpoint hit!");
     });
